@@ -4,8 +4,9 @@
 ```
 npm install
 ```
-### Before run serve start a json-server
+### Before run serve, install and run a json-server
 ```
+npm i -g json-server
 json-server --match db.json
 ```
 
