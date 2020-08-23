@@ -7,7 +7,7 @@ npm install
 ### Before run serve, install and run a json-server
 ```
 npm i -g json-server
-json-server --match db.json
+json-server --watch db.json
 ```
 
 ### Compiles and hot-reloads for development
