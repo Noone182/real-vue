@@ -46,6 +46,7 @@
 
 <script>
 import Datepicker from 'vuejs-datepicker'
+
 export default {
   components: {
     Datepicker
@@ -77,6 +78,7 @@ export default {
     createFreshEventObject() {
       const user = this.$store.state.user.user
       const id = Math.floor(Math.random() * 10000000)
+
       return {
         id: id,
         user: user,

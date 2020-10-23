@@ -15,12 +15,15 @@
 <script>
 import EventCard from '@/components/EventCard.vue'
 import { mapState } from 'vuex'
+
 export default {
   components: {
     EventCard
   },
   created() {
-    this.perPage = 3
+    this.perPage = 3 // Setting perPage here and not in data means it won't be reactive.
+    // We don't need it to be reactive, and this way our component has access to it.
+
     this.$store.dispatch('event/fetchEvents', {
       perPage: this.perPage,
       page: this.page
@@ -33,7 +36,7 @@ export default {
     hasNextPage() {
       return this.event.eventsTotal > this.page * this.perPage
     },
-    ...mapState(['event', 'eventsTotal', 'user'])
+    ...mapState(['event', 'user'])
   }
 }
 </script>
