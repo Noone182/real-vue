@@ -249,6 +249,24 @@
       "date": "",
       "time": "",
       "attendees": []
+    },
+    {
+      "id": 3839676,
+      "user": {
+        "id": "abc123",
+        "name": "Adam"
+      },
+      "category": "housing",
+      "organizer": {
+        "id": "abc123",
+        "name": "Adam"
+      },
+      "title": "NEW",
+      "description": "",
+      "location": "",
+      "date": "",
+      "time": "",
+      "attendees": []
     }
   ]
 }
